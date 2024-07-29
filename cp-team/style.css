@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-text: #fff;
+  --color-black: black;
+  --color-first: #2ebbd4;
+  --color-second: #e7e7e7;
+  --color-hover: #75d2e3;
+  --hover-two: #75d2e380;
+  --color-box: #dcdcdc;
+  --color-i: #202020;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  height: 100dvh;
+  background-color: var(--color-second);
+  accent-color: var(--color-first);
+}
+/****EMPLOYMENT START******/
+#employment {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  padding: 30px 0;
+}
+
+
+.form__job{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.form__job h2 {
+  font-size: clamp(1.5em, 3vw, 2em);
+  font-weight: 900;
+}
+.form__job label {
+  font-size: clamp(0.7em, 2vw, 1em);
+  text-transform: capitalize;
+}
+.form__job input:not([type="radio"]) {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.form__job input:hover{
+  box-shadow: 0px 0px 2px 3px rgb(0, 0, 0, 10%);
+}
+.form__job input::placeholder {
+  opacity: 0.6;
+}
+.position{
+  display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.input__style{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.form__job button{
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--color-first);
+  color: var(--color-black);
+  text-transform: capitalize;
+  font-size: clamp(0.8em, 2vw, 1.2em);
+  padding: 2%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+.msgError {
+  font-size: clamp(10px, 2vw, 16px);
+  font-weight: 500;
+  text-transform: capitalize;
+  color: red;
+}
